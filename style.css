@@ -175,6 +175,115 @@ p {
   display: none;
 }
 
+.right__icons .ri-search-eye-line {
+  display: none;
+}
+
+/* ==== Request for a Service ====== */
+.service__wrapper {
+  /* padding-block: 7rem 0; */
+  position: absolute;
+  margin: 4rem 0 0;
+  width: 30%;
+  right: -100%;
+  box-shadow: -2px 0 5px var(--clr-lightgray-dark-1);
+  background-color: var(--clr-lightgray);
+  transition: all 1.2s ease;
+}
+
+.service__header {
+  background-color: #58585829;
+  text-align: center;
+  padding: 0.6rem;
+  margin-bottom: 0.8rem;
+
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+.service__img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #02c502;
+  offset: 8px;
+  margin: 0 auto;
+  margin-bottom: 0.6rem;
+}
+
+.service__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.crossed i {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  color: #f00;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.service__header h3 {
+  text-transform: uppercase;
+}
+
+.service__body i {
+  font-size: 1.3rem;
+}
+
+.service__body {
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.service__body i:nth-child(1) {
+  cursor: pointer;
+}
+
+.input__wrapper {
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--clr-blue-3);
+  border-radius: 2rem;
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.input__wrapper input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.125rem;
+}
+
+.ok__btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  width: fit-content;
+  border: none;
+  background-color: transparent;
+  margin: 0 auto;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #02c502;
+
+}
+
+.ok__btn i {
+
+  font-size: 3rem;
+}
+
+
 /* ========= Mobile Media Querry ========== */
 
 @media screen and (max-width: 320px) {
@@ -311,6 +420,14 @@ p {
   }
   .close i:hover {
     color: #f00;
+  }
+
+  .right__icons .ri-search-eye-line {
+    display: block;
+  }
+  /* ====== Request for a Service ======= */
+  .service__wrapper {
+    width: 70%;
   }
 }
 /* ========= Tablet Media Querry ========== */
