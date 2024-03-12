@@ -16,11 +16,14 @@ const openLinks = () => {
 const closeMobileContainer = () => {
   navLinksCont.style.left = "-100%";
   mobileContainer.style.display = "none";
-  window.mobileContainer.remove();
 };
-
+let width = "1023px";
 allLinks.forEach((link) => {
-  link.addEventListener("click", closeMobileContainer);
+  if (width > "1024px") {
+    link.style.display = "block";
+  } else {
+    link.addEventListener("click", closeMobileContainer);
+  }
 });
 
 hambuger.addEventListener("click", openMobileContainer);
