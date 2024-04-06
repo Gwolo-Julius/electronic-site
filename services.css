@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.download__section {
+  padding: 2rem 0;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.download,
+.money {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.button__wrapper .download__btn {
+  background-color: #0707a2;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.button__wrapper .download__btn:hover {
+  color: #111;
+  padding: 0.5rem 1.5rem;
+  background-color: transparent;
+  border: 1px solid #0707a2;
+}
+
+.download__icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.download__icon img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.offer__card h4 {
+  text-align: center;
+}
+
+/* =========== Services Section =========== */
+.services {
+  width: 100%;
+  /* position: relative; */
+  height: fit-content;
+  background: url(assets/wirign2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  /* margin-bottom: 20px; */
+}
+
+/* .services img {
+  width: 100%;
+} */
+
+.service__wrapper__cont {
+  background-color: #002992a6;
+  color: #fff;
+  /* position: absolute; */
+  padding: 2rem 0;
+
+  z-index: 1;
+}
+
+.link__details__service {
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+  margin: 0 auto;
+}
+
+.service__heading {
+  padding: 0.1rem 0;
+  text-align: center;
+  /* margin-bottom: 2rem; */
+}
+
+.service__heading p {
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.link__details__left li a,
+.link__details__right li a {
+  color: #fff;
+  padding-bottom: 1.5rem;
+  font-size: 0.8rem;
+  transition: var(--transition);
+}
+
+.link__details__left li a:hover,
+.link__details__right li a:hover {
+  color: tomato;
+}
+.link__details__left h4,
+.link__details__right h4 {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 95%;
+  }
+  .download__section {
+    row-gap: 2rem;
+    flex-direction: column;
+  }
+
+  .link__details__service {
+    padding-top: 0.8rem;
+    /* flex-direction: column; */
+    width: 95%;
+    justify-content: space-between;
+  }
+
+
+}
+@media (min-width: 501px) and (max-width: 1024px) {
+  .container {
+    width: 75%;
+  }
+  .download__section {
+    width: 55%;
+    row-gap: 2rem;
+    flex-direction: column;
+  }
+}

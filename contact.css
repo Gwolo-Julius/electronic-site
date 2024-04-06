@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  resize: none;
+}
+
+.hero__contact {
+  margin-top: 0;
+  width: 100%;
+}
+
+.hero__contact img {
+  width: 100%;
+}
+
+.contact__form {
+  background-color: #ebebeb;
+}
+
+.contact__wrapper {
+  display: flex;
+  padding: 2rem 0;
+  gap: 4rem;
+  justify-content: space-between;
+  /* width: 60%; */
+}
+
+.contact__wrapper h3 {
+  margin-bottom: 1rem;
+}
+
+.contact__info__section {
+  width: 32%;
+}
+.contact__info__section p:nth-child(2) {
+  padding-bottom: 1rem;
+}
+.social__media__icons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.8rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #123;
+}
+
+.social__media__icons i {
+  transition: 0.5s ease-in-out;
+}
+.social__media__icons i:hover {
+  color: blue;
+}
+
+.cont__form input,
+.cont__form textarea {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 0.4rem;
+  background: #fff;
+  border: 1px solid gray;
+  border-radius: 0.2rem;
+}
+
+.cont__form .sub__butn {
+  background-color: blue;
+  color: #fff;
+  width: fit-content;
+  padding: 0.4rem 1.5rem;
+  cursor: pointer;
+  border: none;
+  transition: 0.5s ease;
+}
+
+.cont__form .sub__butn:hover {
+  background-color: rgb(0, 65, 130);
+}
+
+@media screen and (max-width: 500px) {
+  .service__wrapper__cont {
+    padding-top: 1rem;
+  }
+
+  .contact__wrapper {
+    width: 90%;
+    display: flex;
+    padding: 2rem 0;
+    row-gap: 1rem;
+    flex-direction: column-reverse;
+    /* justify-content: space-between; */
+  }
+
+  .contact__info__section {
+    width: 100%;
+  }
+}

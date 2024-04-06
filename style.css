@@ -342,18 +342,28 @@ p {
 }
 
 .intro__left a {
-  background-color: var(--clr-blue-1);
+  /* background-color: var(--clr-blue-1); */
   color: var(--clr-white);
   border: 1px solid var(--clr-blue-1);
   border-radius: 4px;
   padding: 0.6rem 1.4rem;
   transition: var(--transition);
+  text-align: left;
+}
+.introdu_ a {
+  width: fit-content;
+  color: #fff;
+  
 }
 
+.moreBtn {
+  color: #fff;
+}
 .intro__left a:hover {
-  background-color: transparent;
+  background-color: var(--clr-blue-1);
   color: var(--clr-black);
 }
+
 .intro__right {
   width: 50%;
 }
@@ -598,6 +608,38 @@ p {
   color: var(--clr-white);
   font-size: 1.8rem;
 }
+.team__img {
+  position: relative;
+  margin-bottom: 1.8rem;
+}
+
+.team__img img {
+  width: 100%;
+}
+.job__tiltle {
+  background-color: var(--clr-blue-1);
+  color: var(--clr-white);
+  width: 80%;
+  max-width: 80%;
+  padding: 0.6rem 1.1rem;
+  text-align: center;
+  border-radius: 0.4rem;
+  position: absolute;
+  left: 50%;
+  bottom: -16px;
+  transform: translateX(-50%);
+}
+
+.intro__section a {
+  display: block;
+  margin: 1rem auto;
+  color: #123;
+}
+
+.intro__section a:hover {
+  color: rgb(3, 189, 251);
+}
+
 /* ========= Mobile Media Querry ========== */
 
 @media screen and (max-width: 320px) {
